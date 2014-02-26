@@ -8,7 +8,7 @@ app = Flask(__name__)
 buildings = []
 
 @app.route("/")
-def hello():
+def map():
     return render_template('map.html', buildings=buildings)
 
 def geocode_all(addresses):
