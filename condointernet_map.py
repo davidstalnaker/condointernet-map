@@ -1,9 +1,11 @@
+from time import sleep
+
 import requests
 from BeautifulSoup import BeautifulSoup
+from flask import Flask, render_template
 from geopy import GoogleV3
 from geopy.exc import GeocoderQuotaExceeded
-from time import sleep
-from flask import Flask, render_template
+
 app = Flask(__name__)
 buildings = []
 
